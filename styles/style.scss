@@ -134,5 +134,20 @@ body {
         }
     }
 
+    .main-footer {
+        height: 50px;
+        background-color: #343E96;
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+
+        p {
+            padding-top: 15px;
+        }
+    }
+
 //end//
 } 

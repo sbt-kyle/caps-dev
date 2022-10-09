@@ -134,4 +134,17 @@ body {
 .login-form-container .notice p {
   color: #fff;
   font-size: 11px;
+}
+.login-form-container .main-footer {
+  height: 50px;
+  background-color: #343E96;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.login-form-container .main-footer p {
+  padding-top: 15px;
 }/*# sourceMappingURL=style.css.map */
