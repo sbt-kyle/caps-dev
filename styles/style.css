@@ -54,7 +54,7 @@ body {
   padding: 0.2rem 0;
   outline: none;
   background-color: transparent;
-  color: #0d0c22;
+  color: #fff;
   transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   margin-bottom: 10px;
 }
