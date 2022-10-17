@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins;
+  text-decoration: none;
 }
 
 .header {
@@ -25,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/Foundation.png);
+  background-image: url(images/Foundation.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -147,4 +148,179 @@ body {
 }
 .login-form-container .main-footer p {
   padding-top: 15px;
+}
+
+.section-left {
+  background-color: #343E96;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+}
+.section-left .admin-page-logo {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.section-left .nav-container {
+  background-color: #d5d5d5;
+  border-radius: 10px;
+  margin: 25px 10px 20px 10px;
+  height: 240px;
+}
+.section-left .nav-container h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9A9797;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+.section-left .nav-container .nav-links {
+  margin-top: 10px;
+}
+.section-left .nav-container .home, .section-left .nav-container .professor, .section-left .nav-container .about, .section-left .nav-container .courses {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.section-left .nav-container .home .home-icon, .section-left .nav-container .professor .home-icon, .section-left .nav-container .about .home-icon, .section-left .nav-container .courses .home-icon {
+  width: 35px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.section-left .nav-container .home .prof-icon, .section-left .nav-container .home .about-icon, .section-left .nav-container .home .courses-icon, .section-left .nav-container .professor .prof-icon, .section-left .nav-container .professor .about-icon, .section-left .nav-container .professor .courses-icon, .section-left .nav-container .about .prof-icon, .section-left .nav-container .about .about-icon, .section-left .nav-container .about .courses-icon, .section-left .nav-container .courses .prof-icon, .section-left .nav-container .courses .about-icon, .section-left .nav-container .courses .courses-icon {
+  width: 32px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.section-left .nav-container .home h3, .section-left .nav-container .professor h3, .section-left .nav-container .about h3, .section-left .nav-container .courses h3 {
+  color: #5B5B5B;
+  font-size: 16px;
+}
+.section-left .home:hover {
+  background-color: #b8b4b4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.section-left .professor:hover {
+  background-color: #b8b4b4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.section-left .about:hover {
+  background-color: #b8b4b4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.section-left .courses:hover {
+  background-color: #b8b4b4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.section-left .add-prof-container {
+  height: 110px;
+  background-color: #d5d5d5;
+  border-radius: 10px;
+  margin: 190px 10px 20px 10px;
+}
+.section-left .add-prof-container h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9A9797;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+.section-left .add-prof-container .connect {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  height: 60px;
+}
+.section-left .add-prof-container .connect .add-prof-icon {
+  width: 35px;
+  margin-left: 15px;
+}
+.section-left .add-prof-container .connect h3 {
+  color: #5B5B5B;
+  font-size: 15px;
+}
+.section-left .connect:hover {
+  background-color: #b8b4b4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.section-left .logout-container {
+  height: 50px;
+  background-color: #d5d5d5;
+  border-radius: 10px;
+  margin: 30px 10px 0 10px;
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.section-left .logout-container .logout-icon {
+  width: 32px;
+  margin-left: 15px;
+}
+.section-left .logout-container h3 {
+  font-size: 15px;
+  color: #5B5B5B;
+}
+.section-left .logout-container:hover {
+  background-color: #b8b4b4;
+  cursor: pointer;
+}
+
+.section-right {
+  background-color: #dcdcdc;
+  margin-left: 250px;
+  height: 100vh;
+}
+.section-right h2 {
+  font-size: 35px;
+  border-bottom: 3px #343E96 solid;
+  padding: 10px 0;
+  text-align: center;
+  color: #343E96;
+}
+.section-right .foundation {
+  height: 83vh;
+  background-image: url("/images/Foundation.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+.section-right .foundation h1 {
+  font-size: 65px;
+  width: 540px;
+  border-left: 6px #5B5B5B solid;
+  color: #5B5B5B;
+  padding-left: 40px;
+}
+.section-right .footer {
+  position: fixed;
+  background-color: #343E96;
+  width: 100vw;
+  height: 55px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.section-right .footer h4 {
+  width: 22rem;
+  font-weight: 500;
+  color: white;
+  margin-left: 25rem;
 }/*# sourceMappingURL=style.css.map */
