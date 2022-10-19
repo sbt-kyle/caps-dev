@@ -166,7 +166,7 @@ body {
   background-color: #d5d5d5;
   border-radius: 10px;
   margin: 25px 10px 20px 10px;
-  height: 240px;
+  height: 200px;
 }
 .section-left .nav-container h2 {
   font-size: 14px;
@@ -179,7 +179,7 @@ body {
 .section-left .nav-container .nav-links {
   margin-top: 10px;
 }
-.section-left .nav-container .home, .section-left .nav-container .professor, .section-left .nav-container .about, .section-left .nav-container .courses {
+.section-left .nav-container .home, .section-left .nav-container .professor, .section-left .nav-container .about {
   display: grid;
   grid-template-columns: 30px 1fr;
   -moz-column-gap: 55px;
@@ -187,19 +187,19 @@ body {
   align-items: center;
   margin-bottom: 5px;
 }
-.section-left .nav-container .home .home-icon, .section-left .nav-container .professor .home-icon, .section-left .nav-container .about .home-icon, .section-left .nav-container .courses .home-icon {
+.section-left .nav-container .home .home-icon, .section-left .nav-container .professor .home-icon, .section-left .nav-container .about .home-icon {
   width: 35px;
   margin-left: 15px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.section-left .nav-container .home .prof-icon, .section-left .nav-container .home .about-icon, .section-left .nav-container .home .courses-icon, .section-left .nav-container .professor .prof-icon, .section-left .nav-container .professor .about-icon, .section-left .nav-container .professor .courses-icon, .section-left .nav-container .about .prof-icon, .section-left .nav-container .about .about-icon, .section-left .nav-container .about .courses-icon, .section-left .nav-container .courses .prof-icon, .section-left .nav-container .courses .about-icon, .section-left .nav-container .courses .courses-icon {
+.section-left .nav-container .home .prof-icon, .section-left .nav-container .home .about-icon, .section-left .nav-container .professor .prof-icon, .section-left .nav-container .professor .about-icon, .section-left .nav-container .about .prof-icon, .section-left .nav-container .about .about-icon {
   width: 32px;
   margin-left: 15px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.section-left .nav-container .home h3, .section-left .nav-container .professor h3, .section-left .nav-container .about h3, .section-left .nav-container .courses h3 {
+.section-left .nav-container .home h3, .section-left .nav-container .professor h3, .section-left .nav-container .about h3 {
   color: #5B5B5B;
   font-size: 16px;
 }
@@ -214,11 +214,6 @@ body {
   cursor: pointer;
 }
 .section-left .about:hover {
-  background-color: #b8b4b4;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.section-left .courses:hover {
   background-color: #b8b4b4;
   border-radius: 8px;
   cursor: pointer;
@@ -295,7 +290,6 @@ body {
 }
 .section-right .foundation {
   height: 83vh;
-  background-image: url("../images/foundation.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -312,15 +306,164 @@ body {
 .section-right .footer {
   position: fixed;
   background-color: #343E96;
-  width: 100vw;
+  width: 83%;
   height: 55px;
   bottom: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .section-right .footer h4 {
   width: 22rem;
   font-weight: 500;
   color: white;
-  margin-left: 25rem;
+  font-size: 14px;
+}
+
+.prof-intro {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+  /* From uiverse.io by @mrhyddenn */
+}
+.prof-intro h3 {
+  color: #343E96;
+  font-size: 28px;
+}
+.prof-intro .icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px #343E96 solid;
+}
+.prof-intro .add-btn:hover {
+  width: 140px;
+  color: #343E96;
+}
+.prof-intro .add-btn::before,
+.prof-intro .add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: #343E96;
+}
+.prof-intro .add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.prof-intro .add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.prof-intro .icon-btn:focus {
+  outline: none;
+}
+.prof-intro .btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.prof-intro .add-btn:hover::before,
+.prof-intro .add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+.prof-intro .add-btn:hover .btn-txt {
+  opacity: 1;
+}
+.prof-intro .add-icon::after,
+.prof-intro .add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: #343E96;
+  overflow: hidden;
+}
+.prof-intro .add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.prof-intro .add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.prof-intro .add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+.prof-intro .add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+.prof-list {
+  display: grid;
+  row-gap: 10px;
+  margin: 20px 50px;
+}
+.prof-list .for-line {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  border-bottom: 2px #9A9797 solid;
+  padding: 7px;
+}
+.prof-list .for-line h4 {
+  color: #5B5B5B;
+}
+.prof-list .for-line button {
+  background-color: #343E96;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+.prof-list .for-line button:hover {
+  opacity: 0.8;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container .about-content {
+  width: 700px;
+  height: 600px;
+  background-color: #C3C3C3;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.about-container .about-content h4 {
+  color: #343E96;
+  font-size: 32px;
+  margin-top: 20px;
+}
+.about-container .about-content p {
+  font-size: 15px;
+  padding: 20px 50px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
