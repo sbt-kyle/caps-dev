@@ -334,7 +334,7 @@ body {
   width: 50px;
   height: 50px;
   border: 1px solid #cdcdcd;
-  background: white;
+  background: #343E96;
   border-radius: 25px;
   overflow: hidden;
   position: relative;
@@ -347,7 +347,8 @@ body {
 }
 .prof-intro .add-btn:hover {
   width: 140px;
-  color: #343E96;
+  color: #fff;
+  background: #343E96;
 }
 .prof-intro .add-btn::before,
 .prof-intro .add-btn::after {
@@ -357,7 +358,7 @@ body {
   height: 4px;
   width: 10px;
   top: calc(50% - 2px);
-  background: #343E96;
+  background: #fff;
 }
 .prof-intro .add-btn::after {
   right: 14px;
@@ -393,7 +394,7 @@ body {
   height: 20px;
   width: 2px;
   top: calc(50% - 10px);
-  background: #343E96;
+  background: #fff;
   overflow: hidden;
 }
 .prof-intro .add-icon::before {
@@ -437,7 +438,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  padding: 3px 10px;
+  padding: 6px 10px;
 }
 .prof-list .for-line button:hover {
   opacity: 0.8;
